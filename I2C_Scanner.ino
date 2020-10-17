@@ -32,7 +32,7 @@
      
     void setup()
     {
-      Wire.begin();
+      Wire.begin(/* 4 for GPIO4 aka D0*/ 4,/* 5 for GPIO5 aka D1*/ 5);
      
       Serial.begin(9600);
       while (!Serial);             // Leonardo: wait for serial monitor
